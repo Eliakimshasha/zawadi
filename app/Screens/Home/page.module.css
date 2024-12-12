@@ -1,0 +1,15 @@
+#img {
+  background-color: transparent;
+  transition: .3s;
+  
+}
+#imgPara{
+    display: none;
+    transition: .5s;
+}
+#img:hover {
+  background-color: rgba(0, 255, 162, 0.177);
+  #imgPara{
+    display: block;
+  }
+}

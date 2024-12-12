@@ -1,0 +1,8 @@
+#box{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.065);
+  color: rgb(71, 72, 3);
+  background-color: rgba(19, 72, 3, 0.087);
+  margin-bottom: 30px; 
+  border-top: 6px solid rgba(1, 46, 14, 0.597);
+  transition: 0.3s;
+}

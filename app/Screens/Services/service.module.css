@@ -1,0 +1,14 @@
+#bg{
+    background: url('../../../assets/images/img11.jpg'), rgba(0, 0, 0, 0.717);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+#slider{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

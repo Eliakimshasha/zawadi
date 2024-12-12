@@ -1,0 +1,8 @@
+#blogs{
+    background:url('../../../assets/images/img11.jpg'), rgba(0, 0, 0, 0.74);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

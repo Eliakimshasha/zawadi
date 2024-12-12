@@ -1,0 +1,41 @@
+@media only screen and (max-width: 700px) {
+  #header {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  .active {
+    background-color: rgb(3, 147, 3);
+    color: greenyellow;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    margin: auto;
+  }
+  #layout {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #header .link {
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    margin: auto;
+  }
+
+  #header .link:hover {
+    background-color: rgb(1, 127, 47);
+    color: rgb(4, 255, 92);
+  }
+  #head {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.04);
+  }
+  #contact {
+    font-size: 13px;
+  }
+}
