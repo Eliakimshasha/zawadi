@@ -3,7 +3,7 @@ import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import img from '@/assets/images/img11.jpg';
-// import BlogCount from '@/app/components/Blog/BlogCount';
+import BlogCount from '@/app/components/Blog/BlogCount';
 
 // Function to handle the blog page rendering
 function BlogPage() {
@@ -49,7 +49,7 @@ function BlogPage() {
           </div>
         </div>
       </div>
-      {/* <BlogCount /> */}
+      <BlogCount />
     </div>
   );
 }
