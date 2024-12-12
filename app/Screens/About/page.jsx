@@ -4,7 +4,7 @@ import { FaEarthAfrica } from 'react-icons/fa6';
 import Card from '../../components/About/Card';
 import Footer from '@/app/components/Footer/Footer';
 import { WorldMap } from '@/components/ui/world-map';
-import Ratio from 'react-bootstrap/Ratio';
+// import {Ratio} from 'react-bootstrap/Ratio';
 import { AnimatedProducts } from '@/components/ui/products';
 // import { Globe } from '@/components/ui/globe';
 

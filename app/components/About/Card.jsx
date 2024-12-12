@@ -34,7 +34,7 @@ function Card() {
          <Slider {...settings}>
         {reviews.map((review, index) => {
           return (
-            <div>
+            <div key={review.id}>
              <div className='bg-green-100 mx-1  rounded-sm  px-4 py-5  min-h-[200px]'>
              <div key={index}>
                 <p className='flex items-start gap-2'>
