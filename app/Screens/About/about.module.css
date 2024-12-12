@@ -1,8 +1,0 @@
-#bg{
-    background: url('../../../assets/images/bout1.jpg'), rgba(0, 0, 0, 0.506);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-}
