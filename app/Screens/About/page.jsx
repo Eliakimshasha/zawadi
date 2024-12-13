@@ -5,7 +5,6 @@ import Card from '../../components/About/Card';
 import Footer from '@/app/components/Footer/Footer';
 import { WorldMap } from '@/components/ui/world-map';
 import { AnimatedProducts } from '@/components/ui/products';
-import { Globe } from '@/components/ui/globe';
 
 function page() {
   return (
@@ -92,9 +91,7 @@ function page() {
         <div>
           <Card />
         </div>
-        <div>
-          <Globe />
-        </div>
+       
       </div>
       <Footer />
     </div>
