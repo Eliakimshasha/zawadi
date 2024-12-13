@@ -14,7 +14,7 @@ function Page() {
   return (
     <div className="flex flex-col justify-center items-center h-[100vh] bg-white relative z-[999] left-0 top-0 w-full">
       <TypeAnimation
-        sequence={[`Zawadi Agrifood Company LTD`, 1000]}
+        sequence={[`Zawadi Agrifood`, 1000]}
         wrapper="h2"
         speed={25}
         cursor={false}
