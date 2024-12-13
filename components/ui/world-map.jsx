@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { useRef } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
@@ -6,8 +6,31 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 export function WorldMap({
-  dots = [],
-  lineColor = "#003366"
+  dots = [
+    // North America to South America
+    { start: { lat: 34.0522, lng: -118.2437 }, end: { lat: -34.6037, lng: -58.3816 } }, // Los Angeles to Buenos Aires
+
+    // North America to Europe
+    { start: { lat: 34.0522, lng: -118.2437 }, end: { lat: 48.8566, lng: 2.3522 } }, // Los Angeles to Paris
+
+    // Europe to Asia
+    { start: { lat: 48.8566, lng: 2.3522 }, end: { lat: 35.6895, lng: 139.6917 } }, // Paris to Tokyo
+
+    // Asia to Africa
+    { start: { lat: 35.6895, lng: 139.6917 }, end: { lat: -1.286389, lng: 36.817223 } }, // Tokyo to Nairobi
+
+    // Africa to South America
+    { start: { lat: -1.286389, lng: 36.817223 }, end: { lat: -34.6037, lng: -58.3816 } }, // Nairobi to Buenos Aires
+
+    // Oceania to North America
+    { start: { lat: -33.8688, lng: 151.2093 }, end: { lat: 34.0522, lng: -118.2437 } }, // Sydney to Los Angeles
+
+    // Asia to Oceania
+    { start: { lat: 35.6895, lng: 139.6917 }, end: { lat: -33.8688, lng: 151.2093 } }, // Tokyo to Sydney
+  ],
+  lineColor = "#003366", // Default line color
+  dotSize = 3, // Custom dot size
+  pathDelay = 0.5, // Custom animation delay for paths
 }) {
   const svgRef = useRef(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
@@ -27,34 +50,32 @@ export function WorldMap({
     return { x, y };
   };
 
-  const createCurvedPath = (
-    start,
-    end
-  ) => {
+  const createCurvedPath = (start, end) => {
     const midX = (start.x + end.x) / 2;
     const midY = Math.min(start.y, end.y) - 50;
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
 
   return (
-    (<div
-      className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg  relative font-sans">
+    <div className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg relative font-sans">
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
         alt="world map"
         height="495"
         width="1056"
-        draggable={false} />
+        draggable={false}
+      />
       <svg
         ref={svgRef}
         viewBox="0 0 800 400"
-        className="w-full h-full absolute inset-0 pointer-events-none select-none">
+        className="w-full h-full absolute inset-0 pointer-events-none select-none"
+      >
         {dots.map((dot, i) => {
           const startPoint = projectPoint(dot.start.lat, dot.start.lng);
           const endPoint = projectPoint(dot.end.lat, dot.end.lng);
           return (
-            (<g key={`path-group-${i}`}>
+            <g key={`path-group-${i}`}>
               <motion.path
                 d={createCurvedPath(startPoint, endPoint)}
                 fill="none"
@@ -64,15 +85,18 @@ export function WorldMap({
                   pathLength: 0,
                 }}
                 animate={{
-                  pathLength: 1,
+                  pathLength: [0, 1],  // Animate path from 0 to full length
                 }}
                 transition={{
-                  duration: 1,
-                  delay: 0.5 * i,
-                  ease: "easeOut",
+                  duration: 2, // Increase duration to make the movement smoother
+                  repeat: Infinity, // Loop the animation indefinitely
+                  repeatType: "loop", // Continuously loop the path animation
+                  delay: pathDelay * i, // Staggered delay for each path
+                  ease: "easeInOut", // Smoother easing
                 }}
-                key={`start-upper-${i}`}></motion.path>
-            </g>)
+                key={`path-${i}`}
+              ></motion.path>
+            </g>
           );
         })}
 
@@ -87,65 +111,75 @@ export function WorldMap({
 
         {dots.map((dot, i) => (
           <g key={`points-group-${i}`}>
+            {/* Start Dot */}
             <g key={`start-${i}`}>
               <circle
                 cx={projectPoint(dot.start.lat, dot.start.lng).x}
                 cy={projectPoint(dot.start.lat, dot.start.lng).y}
-                r="2"
-                fill={lineColor} />
+                r={dotSize}
+                fill={lineColor}
+              />
               <circle
                 cx={projectPoint(dot.start.lat, dot.start.lng).x}
                 cy={projectPoint(dot.start.lat, dot.start.lng).y}
-                r="2"
+                r={dotSize}
                 fill={lineColor}
-                opacity="0.5">
+                opacity="0.5"
+              >
                 <animate
                   attributeName="r"
-                  from="2"
-                  to="8"
+                  from={dotSize}
+                  to={dotSize * 2}
                   dur="1.5s"
                   begin="0s"
-                  repeatCount="indefinite" />
+                  repeatCount="indefinite"
+                />
                 <animate
                   attributeName="opacity"
                   from="0.5"
                   to="0"
                   dur="1.5s"
                   begin="0s"
-                  repeatCount="indefinite" />
+                  repeatCount="indefinite"
+                />
               </circle>
             </g>
+            {/* End Dot */}
             <g key={`end-${i}`}>
               <circle
                 cx={projectPoint(dot.end.lat, dot.end.lng).x}
                 cy={projectPoint(dot.end.lat, dot.end.lng).y}
-                r="2"
-                fill={lineColor} />
+                r={dotSize}
+                fill={lineColor}
+              />
               <circle
                 cx={projectPoint(dot.end.lat, dot.end.lng).x}
                 cy={projectPoint(dot.end.lat, dot.end.lng).y}
-                r="2"
+                r={dotSize}
                 fill={lineColor}
-                opacity="0.5">
+                opacity="0.5"
+              >
                 <animate
                   attributeName="r"
-                  from="2"
-                  to="8"
+                  from={dotSize}
+                  to={dotSize * 2}
                   dur="1.5s"
                   begin="0s"
-                  repeatCount="indefinite" />
+                  repeatCount="indefinite"
+                />
                 <animate
                   attributeName="opacity"
                   from="0.5"
                   to="0"
                   dur="1.5s"
                   begin="0s"
-                  repeatCount="indefinite" />
+                  repeatCount="indefinite"
+                />
               </circle>
             </g>
           </g>
         ))}
       </svg>
-    </div>)
+    </div>
   );
 }

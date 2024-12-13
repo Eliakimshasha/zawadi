@@ -34,7 +34,6 @@ function Card() {
       <Slider {...settings}>
         {reviews.map((review) => {
           return (
-            // Add key prop here, using review.id
             <div key={review.id}>
               <div className="bg-green-100 mx-1  rounded-sm  px-4 py-5  min-h-[200px]">
                 <p className="flex items-start gap-2">

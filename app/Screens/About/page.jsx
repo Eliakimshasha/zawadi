@@ -5,7 +5,7 @@ import Card from '../../components/About/Card';
 import Footer from '@/app/components/Footer/Footer';
 import { WorldMap } from '@/components/ui/world-map';
 import { AnimatedProducts } from '@/components/ui/products';
-// import { Globe } from '@/components/ui/globe';
+import { Globe } from '@/components/ui/globe';
 
 function page() {
   return (
@@ -55,7 +55,7 @@ function page() {
           <p className="my-3">
             <span className="font-semibold">
               Boosting Agricultural Productivity:
-            </span>{' '}
+            </span>
             Zawadi-Agrifood worked with local farmers to implement sustainable
             farming practices. Through our in-depth research and tailored
             support, we helped increase crop yields by 30% over two seasons,
@@ -70,20 +70,20 @@ function page() {
             increasing their international revenue by 40% in just one year.
           </p>
         </div>
-        <div className="py-2 relative">
+        <div className="relative bg-white">
           <h1 className="absolute z-10 text-xl font-bold text-gray-400 top-[48%] w-full text-center">
             across the world
           </h1>
           <WorldMap />
         </div>
         <div>
-          <h1 className='text-lg font-bold'>Our Products</h1>
+          <h1 className="text-lg font-bold">Our Products</h1>
           <p>
-            We specialize in trading of a variety of agro-food and cash
-            crops, contributing to the global food supply chain. Some of the key crops we work with include cashew nuts,
-            cocoa beans, sunflower seeds, rice, maize (corn), wheat, groundnuts
-            (peanuts), cotton, soybeans, and various spices such as black pepper
-            and turmeric.
+            We specialize in trading of a variety of agro-food and cash crops,
+            contributing to the global food supply chain. Some of the key crops
+            we work with include cashew nuts, cocoa beans, sunflower seeds,
+            rice, maize (corn), wheat, groundnuts (peanuts), cotton, soybeans,
+            and various spices such as black pepper and turmeric.
           </p>
         </div>
         <div>
@@ -92,7 +92,9 @@ function page() {
         <div>
           <Card />
         </div>
-        <div>{/* <Globe /> */}</div>
+        <div>
+          <Globe />
+        </div>
       </div>
       <Footer />
     </div>
