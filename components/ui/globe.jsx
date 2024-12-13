@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
@@ -131,7 +131,7 @@ export function Globe({
       .pointRadius(2);
 
     globeRef.current
-      .ringsData([])
+      .ringsData([]) // You can update this based on your logic
       .ringColor((e) => (t) => e.color(t))
       .ringMaxRadius(defaultProps.maxRings)
       .ringPropagationSpeed(RING_PROPAGATION_SPEED)
