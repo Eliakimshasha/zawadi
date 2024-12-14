@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        title:["Oswald", "sans-serif"]
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

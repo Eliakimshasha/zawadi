@@ -26,7 +26,10 @@ export default function Home() {
 
   return (
     <div className=" m-0 h-[100vh]">
-      <CarouselPlugin />
+      <div className='w-[100%] bg-red-900 h-[100vh] relative overflow-hidden'>
+         <CarouselPlugin />
+      </div>
+     
       <div className="py-10 px-4 lg:px-24 flex flex-col space-y-8">
         <div className=" lg:-top-32 md:-top-32 flex flex-col gap-4 w-full md:flex-row lg:flex-row">
           <div
@@ -220,6 +223,7 @@ export default function Home() {
               >
                 <Image
                   src={product.image}
+                  alt='image'
                   className="w-[100%] h-full"
                   style={{ objectFit: 'cover' }}
                 />
