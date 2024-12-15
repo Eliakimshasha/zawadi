@@ -3,40 +3,34 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Img1 from '../../assets/images/par1.jpg';
-import Img2 from '../../assets/images/on1.jpg';
-import Img3 from '../../assets/images/sunflower.jpg';
-import Img4 from '../../assets/images/pepper.jpg';
-import Img5 from '../../assets/images/dra1.jpg';
+import Image1 from '@/assets/images/par1.jpg'
+import Image3 from '@/assets/images/product-cashew.jpg'
+import Image4 from '@/assets/images/cocoa-beans.jpg'
+import Image5 from '@/assets/images/sesame-seed.jpg'
 
 export const AnimatedProducts = ({
   testimonials = [
     {
-      src: Img1,
-      name: "Cashew Nuts ",
+      src: Image1,
+      name: "Avocado",
       designation: "Anacardium occidentale",
-      quote: "Cashew nuts are the seeds of the cashew tree, known for their rich, nutty flavor. They are commonly used in cooking, snacking, and as an ingredient in many food products."
+      quote: "Avocado are the seeds of the cashew tree, known for their rich, nutty flavor. They are commonly used in cooking, snacking, and as an ingredient in many food products."
     },
     {
-      src: Img2,
-      name: "Cocoa Beans",
-      designation: "Theobroma cacao",
-      quote: "Cocoa beans are the primary ingredient in chocolate production. They are harvested from the cacao tree, with a distinct bitter flavor that turns sweet during processing."
-    },{
-      src: Img3,
-      name: "Sunflower Seeds ",
+      src: Image3,
+      name: "Cashew Nuts ",
       designation: "Helianthus annuus",
-      quote: "Sunflower seeds are rich in healthy fats, protein, and fiber. They are often eaten raw, roasted, or used to produce sunflower oil, a popular cooking ingredient."
+      quote: "Cashew Nuts are rich in healthy fats, protein, and fiber. They are often eaten raw, roasted, or used to produce sunflower oil, a popular cooking ingredient."
     },{
-      src: Img4,
-      name: "Black Pepper",
+      src: Image4,
+      name: "Cocoa Beans",
       designation: "Piper nigrum",
-      quote: "Black pepper is a widely used spice known for its sharp, pungent flavor. It is harvested from the dried fruit of the pepper vine and is a key ingredient in many cuisines."
+      quote: "Cocoa Beans is a widely used spice known for its sharp, pungent flavor. It is harvested from the dried fruit of the pepper vine and is a key ingredient in many cuisines."
     },{
-      src: Img5,
-      name: "Dragon Fruit",
+      src: Image5,
+      name: "Sesame Seeds",
       designation: "Hylocereus spp",
-      quote: "Dragon fruit is a tropical fruit known for its striking appearance, with vibrant pink or yellow skin and white or red flesh speckled with tiny black seeds. It is rich in antioxidants, vitamin C, and fiber, making it a popular choice for health-conscious consumers."
+      quote: "Sesame Seeds is a tropical fruit known for its striking appearance, with vibrant pink or yellow skin and white or red flesh speckled with tiny black seeds. It is rich in antioxidants, vitamin C, and fiber, making it a popular choice for health-conscious consumers."
     },
   ],
   autoplay = false

@@ -29,10 +29,10 @@ export default function Blogs({ image, path, desc, title, date }) {
         />
       </div>
       <div className="p-2 pb-2 relative">
-        <div className="absolute right-3 z-10 -top-9 bg-green-200 px-2">
+        <div className="absolute right-3 z-10 text-white -top-9 bg-teal-700 px-2">
           {date}
           <div
-            className={`${styles.arrow} absolute right-20  -bottom-1 bg-green-200 z-10`}
+            className={`${styles.arrow} absolute right-20  -bottom-1 bg-teal-700 z-10`}
           ></div>
         </div>
         <h1 className=" font-semibold">{title}</h1>
@@ -40,22 +40,22 @@ export default function Blogs({ image, path, desc, title, date }) {
         <div className="flex justify-between items-center">
           <Link
             href={{ pathname: path, query: { image, desc, title, date } }}
-            className="bg-green-200 px-5 py-1"
+            className="bg-teal-700 text-white px-5 py-1"
           >
             Read Post
           </Link>
 
           <div className="flex gap-1 items-center">
-            <p className="text-gray-500 p-2 bg-green-200 rounded-sm hover:text-sm hover:text-green-900 hover:bg-green-200">
+            <p className="text-white p-2 bg-teal-700 rounded-sm hover:text-sm hover:text-green-900 hover:bg-teal-700">
               <SlSocialFacebook />
             </p>
-            <p className="text-gray-500 p-2 bg-green-200 rounded-sm hover:text-sm hover:text-green-900 hover:bg-green-200">
+            <p className="text-white p-2 bg-teal-700 rounded-sm hover:text-sm hover:text-green-900 hover:bg-teal-700">
               <FaXTwitter />
             </p>
-            <p className="text-gray-500 p-2 bg-green-200 rounded-sm hover:text-sm hover:text-green-900 hover:bg-green-200">
+            <p className="text-white p-2 bg-teal-700 rounded-sm hover:text-sm hover:text-green-900 hover:bg-teal-700">
               <FaInstagram />
             </p>
-            <p className="text-gray-500 p-2 bg-green-200 rounded-sm hover:text-sm hover:text-green-900 hover:bg-green-200">
+            <p className="text-white p-2 bg-teal-700 rounded-sm hover:text-sm hover:text-green-900 hover:bg-teal-700">
               <BiLogoLinkedinSquare />
             </p>
           </div>

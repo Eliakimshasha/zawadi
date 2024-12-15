@@ -5,22 +5,38 @@ import { FaInstagram } from 'react-icons/fa';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { GiAlarmClock } from 'react-icons/gi';
 import { GoArrowRight } from 'react-icons/go';
+import Logo from '@/assets/images/zawadi.png';
+import Image from 'next/image';
 
 function Footer() {
   return (
-    <div className="bg-green-300 text-green-800">
+    <div className="bg-[#134e4a] text-white pt-3">
+      <div className="flex items-start justify-between px-3">
+        <div className="relative overflow-hidden">
+          <Image src={Logo} alt="zawadi.image" />
+        </div>
+        <div className="w-[60%] text-teal-800 bg-white px-4 py-1 rounded-sm">
+          <p>Address. P.O.Box 104342</p>
+          <p>Samora Street, Plot 763</p>
+          <p>Block 32 Dar es salaam</p>
+          <p>Holland House- First floor</p>
+        </div>
+      </div>
       <div className="pt-5 px-4">
         <div className="lg:flex">
-          <h1 className="text-lg font-semibold mb-2">
-            Subscribe to
-            <span className="text-yellow-600"> Our Newsletter</span>
-          </h1>
-          <p>
+          <div className='flex items-center justify-between'>
+            <p>**********</p>
+            <h1 className="text-lg font-semibold mb-2 font-title text-center">
+              Subscribe to Our Newsletter
+            </h1>
+            <p>**********</p>
+          </div>
+          <p className='text-center'>
             Receive company emails to take advantages of products, promotions,
             trends discounts, and more.
           </p>
-          <div className="my-3">
-            <form action="" className="flex pr-4">
+          <div className="my-3 mx-auto flex justify-center items-center">
+            <form action="" className="flex w-full">
               <input
                 type="email"
                 name=""
@@ -34,118 +50,96 @@ function Footer() {
             </form>
           </div>
         </div>
-        {/* <img src={sub2} alt="" /> */}
-        <div className="">
-          <p className="pb-1 mb-3" style={{ borderBottom: '1px dotted white' }}>
-            Zawadi Agri-food is a premium food company that is committed to
-            offering value to food chains around the world, from logistics to
-            being an intermediary representative of other food companies around
-            the world. We are currently based in Tanzania
-          </p>
-          <p
-            className=" pb-3 mb-1"
-            style={{ borderBottom: '1px dotted green' }}
-          >
-            Kenya Branch | Zawadi Agri-food Industries Ltd. Unifilters Godown No
-            5 | North Airport Road, Nairobi
-          </p>
-          <p>
-            Zawadi Agri-food UK | Northgate House, Northgate, Sleaford,
-            Lincolnshire, England, NG34 7BZ
-          </p>
-        </div>
-        <div className="">
-          <h1>Our Products</h1>
-        </div>
+
         <div className="">
           <div
-            className="flex justify-between items-center py-4  px-2 text-lg"
+            className="flex justify-between items-center py-4  px-2 text-lg font-bold font-title"
             style={{
               borderBottom: '1px dotted white',
             }}
           >
             <h1>
               Opening
-              <span className="text-yellow-600 font-semibold">Hours</span>
+              <span className="text-yellow-500 font-semibold">Hours</span>
             </h1>
-            <GiAlarmClock color="#D97706" size={25} />
+            <GiAlarmClock  className="text-yellow-500" size={25} />
           </div>
           <div
-            className="flex justify-between items-center py-4  px-2"
-            style={{ borderBottom: '1px dotted green' }}
+            className="flex justify-between items-center py-2  px-2"
+            style={{ borderBottom: '1px dotted white' }}
           >
             <p>Monday</p>
             <p>08:00-17:00</p>
           </div>
           <div
-            className="flex justify-between items-center py-4  px-2"
-            style={{ borderBottom: '1px dotted green' }}
+            className="flex justify-between items-center py-2  px-2"
+            style={{ borderBottom: '1px dotted white' }}
           >
             <p>Tuesday</p>
             <p>08:00-17:00</p>
           </div>
           <div
-            className="flex justify-between items-center py-4  px-2"
-            style={{ borderBottom: '1px dotted green' }}
+            className="flex justify-between items-center py-2  px-2"
+            style={{ borderBottom: '1px dotted white' }}
           >
             <p>Wednesday</p>
             <p>08:00-17:00</p>
           </div>
           <div
-            className="flex justify-between items-center py-4  px-2"
-            style={{ borderBottom: '1px dotted green' }}
+            className="flex justify-between items-center py-2  px-2"
+            style={{ borderBottom: '1px dotted white' }}
           >
             <p>Thursday</p>
             <p>08:00-17:00</p>
           </div>
           <div
-            className="flex justify-between items-center py-4  px-2"
-            style={{ borderBottom: '1px dotted green' }}
+            className="flex justify-between items-center py-2  px-2"
+            style={{ borderBottom: '1px dotted white' }}
           >
             <p>Saturday</p>
             <p>08:00-12:00</p>
           </div>
-          <div className="flex justify-between items-center py-4  px-2">
+          <div className="flex justify-between items-center py-2  px-2">
             <p>Sunday</p>
             <p>We are closed</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-green-300 w-full py-3">
-        <div className="flex justify-center text-yellow-950 gap-2 items-center my-3 ">
+      <div className="bg-teal-900 w-full py-3">
+        <div className="flex justify-center text-white gap-2 items-center my-3 ">
           <div
             className="p-2 rounded-full"
-            style={{ border: '1px dotted green' }}
+            style={{ border: '1px dotted white' }}
           >
             <FaInstagram />
           </div>
           <div
             className="p-2 rounded-full"
-            style={{ border: '1px dotted green' }}
+            style={{ border: '1px dotted white' }}
           >
             <FaXTwitter />
           </div>
           <div
             className="p-2 rounded-full"
-            style={{ border: '1px dotted green' }}
+            style={{ border: '1px dotted white' }}
           >
             <SlSocialFacebook />
           </div>
           <div
             className="p-2 rounded-full"
-            style={{ border: '1px dotted green' }}
+            style={{ border: '1px dotted white' }}
           >
             <SlSocialLinkedin />
           </div>
         </div>
-        <p className="text-center text-yellow-950">
+        <p className="text-center text-white">
           Copyright (c) 2024 Zawadi Agri-food Industries Ltd.
         </p>
-        <p className="text-center text-yellow-950">
-          Email: info@ZawadiAgrifood.co.tz
+        <p className="text-center text-white">
+          Email: ZawadiAgrifood@gmail.com
         </p>
-        <p className="text-center text-yellow-950">Tel: +255 683 401 481</p>
+        <p className="text-center text-white">Tel: +255 710 076 960</p>
       </div>
     </div>
   );

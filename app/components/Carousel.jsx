@@ -13,14 +13,13 @@ import styles from './Carousel.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
+import { FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { GiTreeBranch } from 'react-icons/gi';
 import { FaSquareFull } from 'react-icons/fa';
-
 import { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaXTwitter } from 'react-icons/fa6';
 import { SlSocialFacebook } from 'react-icons/sl';
-import { FaInstagram } from 'react-icons/fa';
 import { SlSocialLinkedin } from 'react-icons/sl';
 
 function CarouselPlugin() {
@@ -30,7 +29,7 @@ function CarouselPlugin() {
   const datas = [
     {
       id: 'image1',
-      bg: '#7c2d12',
+      bg: '#134e4a',
       image: image5,
       title: 'Cocoa Bean',
       desc: ' Leader in Supply Raw Cashew Nuts, Cashew Kernels, Coconut, Cocoa Beans and Gum Arabic',
@@ -38,7 +37,7 @@ function CarouselPlugin() {
     },
     {
       id: 'image2',
-      bg: '#2563eb',
+      bg: '#134e4a',
 
       image: image,
       title: 'Cashew Nuts',
@@ -82,7 +81,7 @@ function CarouselPlugin() {
             <div className="carousel-item" key={data.id}>
               <div
                 style={{ backgroundColor: data.bg }}
-                className="h-[100vh] flex justify-center items-center"
+                className="h-[95vh] lg:h-[100vh] md:h-[100vh] flex justify-center items-center"
               >
                 <div className="flex lg:flex-row lg:justify-between px-9 relative lg:px-16 w-full h-[70vh] lg:h-[60%] lg:gap-2 items-center flex-col">
                   <div className="lg:w-[50%] ">
@@ -98,11 +97,11 @@ function CarouselPlugin() {
                       {data.desc}
                     </p>
                     <div
-                      className="lg:px-14 py-1 px-9 lg:py-3 rounded-2xl lg:rounded-full w-fit lg:relative absolute bottom-24 lg:bottom-0"
+                      className="lg:px-14 py-2 px-9 lg:py-3 rounded-2xl lg:rounded-xl w-fit lg:relative absolute bottom-24 left-[60px] lg:left-0 lg:bottom-0"
                       style={{ border: '2px solid white' }}
                     >
                       <p className="text-white font-semibold">
-                        Get Latest Cashew nut Price
+                        Get Latest {data.title} Price
                       </p>
                     </div>
                   </div>
@@ -113,7 +112,7 @@ function CarouselPlugin() {
                       className="h-full w-auto"
                     />
                     <div className="pl-5 flex flex-col items-center absolute right-6 top-4 lg:hidden">
-                      <div className="w-[150px] h-[1px] bg-white"></div>
+                      <div className="w-[135px] h-[1px] bg-white"></div>
                     </div>
                     <div className="pl-5 flex flex-col items-center absolute right-6 top-3  h-full lg:hidden">
                       <div className="w-[8px] rounded-full h-[8px] bg-white"></div>
@@ -125,6 +124,33 @@ function CarouselPlugin() {
                       <div className="w-[8px] rounded-full h-[8px] bg-white"></div>
                       <div className="w-[1px] h-[105px] bg-white"></div>{' '}
                       <div className="w-[8px] rounded-full h-[8px] bg-white"></div>
+                    </div>
+
+                    <div className="pl-5 flex items-center gap-2 text-white absolute right-32 bottom-[-250px]  h-full lg:hidden">
+                      <div
+                        className="p-2 rounded-full cursor-pointer"
+                        style={{ border: '1px solid white' }}
+                      >
+                        <FaInstagram className="hover:p-1" />
+                      </div>
+                      <div
+                        className="p-2 rounded-full cursor-pointer"
+                        style={{ border: '1px solid white' }}
+                      >
+                        <FaXTwitter className="hover:p-1" />
+                      </div>
+                      <div
+                        className="p-2 rounded-full cursor-pointer"
+                        style={{ border: '1px solid white' }}
+                      >
+                        <SlSocialLinkedin className="hover:p-1" />
+                      </div>
+                      <div
+                        className="p-2 rounded-full cursor-pointer"
+                        style={{ border: '1px solid white' }}
+                      >
+                        <SlSocialFacebook className="hover:p-1" />
+                      </div>
                     </div>
                   </div>
 
