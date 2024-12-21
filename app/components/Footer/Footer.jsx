@@ -6,7 +6,7 @@ import { FaInstagram } from 'react-icons/fa';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { GiAlarmClock } from 'react-icons/gi';
 import { GoArrowRight } from 'react-icons/go';
-import Logo from '@/assets/images/zawadi.png';
+import Logo from '@/assets/images/Zawadi.png';
 import Image from 'next/image';
 
 function Footer() {

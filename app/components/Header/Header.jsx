@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import logo from '@/assets/images/logo.png';
-import logo2 from '@/assets/images/zawadi2.png';
+import logo2 from '@/assets/images/Zawadi2.png';
 import { CiLocationOn } from 'react-icons/ci';
 import { SiWhatsapp } from 'react-icons/si';
 
