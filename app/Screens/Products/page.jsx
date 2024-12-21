@@ -47,7 +47,7 @@ function Page() {
                 </div>
                 <div className="h-[250px] p-2">
                   <h1>{product.title}</h1>
-                  <p>{product.desc}</p>
+                  <p className='line-clamp-6'>{product.desc}</p>
                 </div>
                 <div className="flex text-green-700  cursor-pointer items-center rounded-xl shadow-md w-fit px-4 py-1">
                   <p>Request for quote</p>

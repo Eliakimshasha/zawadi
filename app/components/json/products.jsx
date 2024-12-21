@@ -13,57 +13,57 @@ export const products = [
     id: 9,
     image: Image9,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
   {
     id: 5,
     image: Image5,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
   {
     id: 7,
     image: Image7,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
   {
     id: 1,
     image: Image1,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
   {
     id: 2,
     image: Image2,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
 
   {
     id: 3,
     image: Image3,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
   {
     id: 4,
     image: Image4,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
 
   {
     id: 6,
     image: Image6,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
 
   {
     id: 8,
     image: Image8,
     title: '+ Cloves CG3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+    desc: 'As a leading supplier of raw cashew nuts, we are uniquely positioned to collaborate with dependable and committed factories in both Africa and Asia, including Vietnam, India, and Brazil. These factories serve as our trusted partners, enabling us to access the highest caliber of cashew kernels available in the market. Our distribution network extends to the United Kingdom, the European Union, and the United States.Typically, our sales transactions are conducted on both FOB (Free On Board) and CNF (Cost and Freight) terms. Furthermore, we proudly maintain membership with the International Nut Congress (INC).',
   },
 ];
