@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        title:["Oswald", "sans-serif"],
+        title:["Oswald", "Noto Sans Japanese"],
         paragraph:["Noto Sans Japanese","poppins"]
       },
       colors: {

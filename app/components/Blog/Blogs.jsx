@@ -18,8 +18,8 @@ export default function Blogs({ image, path, desc, title, date }) {
   }, []);
   return (
     <div
-      className="p-2 rounded-sm"
-      style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.173)' }}
+      className="p-2 rounded-sm shadow-sm"
+      // style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.173)' }}
     >
       <div className="relative overflow-hidden rounded-t-sm h-[200px] w-full flex items-center justify-center">
         <Image

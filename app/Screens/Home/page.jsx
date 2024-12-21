@@ -78,16 +78,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="px-4 lg:px-24 mb-8">
-          <h1 className="text-center text-lg font-title font-semibold">
+        <div className="px-4 lg:px-24 mb-8 py-3">
+          <h1 className="text-center  font-title text-red-600">
             OUR PRODUCTS
           </h1>
-          <p className="text-center font-paragraph">
-            Sourced from the farms directly. Fresh, best quality products.
+          <p className="text-center font-title font-bold text-3xl">
+            We Provide High Quality Products
           </p>
-          <div className="bg-white">
+          <div className="bg-whte">
             {products.slice(0, 3).map((product) => (
-              <div key={product.id} className="shadow-md rounded-sm">
+              <div key={product.id} className="shadow-md rounded-sm bg-white">
                 <div
                   className="relative items-center justify-center overflow-hidden py-3 pt-0 my-4 grid lg:grid-cols-3 md:grid-cols-2 w-full lg:w-[300px]"
                   style={{ height: '200px' }}
@@ -140,13 +140,13 @@ export default function Home() {
           <Page />
         </div>
 
-        {/* <div className="px-4 lg:px-24 bg-blue-50">
+        <div className="px-4 lg:px-24 bg-blue-50">
           <div className="grid lg:grid-cols-3 p-1 rounded-t-sm md:grid-cols-2 lg:gap-6 md:gap-6">
             <div
-              className="flex justify-between bg-white py-3 items-center rounded-t-sm z-20 px-2 mb-4 sticky top-[65px]"
+              className="flex justify-between bg-white py-3 items-center rounded-t-sm z-20 px-2 mb-4 sticky top-[60px]"
               style={{ boxShadow: '0 -10px 10px rgba(0, 0, 0, 0.0.7)' }}
             >
-              <h1 className="text-lg font-bold font-title">Our Blogs</h1>
+              <h1 className="text-lg font-bold font-title">News Updates</h1>
               <p
                 className="bg-teal-700 text-white rounded-sm hover: text-sm px-3 py-[2px] cursor-pointer"
                 onClick={() => router.push('Blogs')}
@@ -169,7 +169,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="px-4 lg:px-24 bg-blue-50 py-5">
           <div className="grid lg:grid-cols-3 p-1  rounded-t-sm md:grid-cols-2 lg:gap-6 md:gap-6">

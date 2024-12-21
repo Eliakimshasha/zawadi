@@ -76,18 +76,18 @@ function Page() {
 
   return (
     <div>
-        <div className="bg-teal-700 p-4">
-          <h1 className="font-title font-semibold text-white text-lg text-center">
+        <div className="bg-blue-50 p-4">
+          <h1 className="font-title font-semibold text-black text-lg text-center">
             Zawadi Agrifood Company Ltd at a Glance
           </h1>
-          <p className="text-center text-white">
+          <p className="text-center text-black">
             Key Facts and Figures about Our Soft-Commodity Trading Company
           </p>
           <div className="grid grid-cols-2 mt-3 md:grid-cols-3 lg:grid-cols-3">
             {facts.map((fact, index) => (
               <div
                 key={fact.id}
-                className="fact bg-teal-500 py-4 px-1 text-center rounded-sm m-4 flex flex-col justify-center items-center"
+                className="fact  text-white bg-teal-800 py-4 px-1 text-center rounded-sm m-4 flex flex-col justify-center items-center"
               >
                 <div>{fact.icon}</div>
                 <h1 className="font-bold text-xl font-title">

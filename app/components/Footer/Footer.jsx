@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { FaXTwitter } from 'react-icons/fa6';
 import { SlSocialFacebook } from 'react-icons/sl';
@@ -15,38 +16,47 @@ function Footer() {
         <div className="relative overflow-hidden">
           <Image src={Logo} alt="zawadi.image" />
         </div>
-        <div className="w-[60%] text-teal-800 bg-white px-4 py-1 rounded-sm">
+        {/* <div className="w-[60%] text-teal-800 bg-white px-4 py-1 rounded-sm">
           <p>Address. P.O.Box 104342</p>
           <p>Samora Street, Plot 763</p>
           <p>Block 32 Dar es salaam</p>
           <p>Holland House- First floor</p>
-        </div>
+        </div> */}
       </div>
       <div className="pt-5 px-4">
         <div className="lg:flex">
-          <div className='flex items-center justify-between'>
+          <div className="flex items-center justify-between">
             <p>**********</p>
             <h1 className="text-lg font-semibold mb-2 font-title text-center">
               Subscribe to Our Newsletter
             </h1>
             <p>**********</p>
           </div>
-          <p className='text-center'>
+          <p className="text-center">
             Receive company emails to take advantages of products, promotions,
             trends discounts, and more.
           </p>
           <div className="my-3 mx-auto flex justify-center items-center">
             <form action="" className="flex w-full">
-              <input
-                type="email"
-                name=""
-                id=""
-                placeholder="E-mail address"
-                className="w-full px-2 py-2 outline-none border-none text-black"
-              />
-              <button className="px-5 bg-yellow-500">
-                <GoArrowRight color="white" size={17} />
-              </button>
+              <div className='flex flex-col w-full'>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="E-mail address"
+                  className="w-full px-2 py-1 rounded-sm outline-none border-none text-black"
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Full Name (Optional)"
+                  className="w-full my-2 px-2 py-1 rounded-sm outline-none border-none text-black"
+                />
+                <button className="bg-yellow-500 rounded-sm text-center py-1 cursor-pointer" onClick={(e)=>e.preventDefault()}>
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -62,7 +72,7 @@ function Footer() {
               Opening
               <span className="text-yellow-500 font-semibold">Hours</span>
             </h1>
-            <GiAlarmClock  className="text-yellow-500" size={25} />
+            <GiAlarmClock className="text-yellow-500" size={25} />
           </div>
           <div
             className="flex justify-between items-center py-2  px-2"

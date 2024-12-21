@@ -39,23 +39,19 @@ function Header() {
       name: 'Services',
       path: '/Screens/Services',
     },
+    
     {
       id: 4,
-      name: 'Profile',
-      path: '/Screens/Profile',
-    },
-    {
-      id: 5,
       name: 'Products',
       path: '/Screens/Products',
     },
     {
-      id: 6,
+      id: 5,
       name: 'Blogs',
       path: '/Screens/Blogs',
     },
     {
-      id: 7,
+      id: 6,
       name: 'Contact',
       path: '/Screens/Contact',
     },
@@ -108,29 +104,30 @@ function Header() {
                 onClick={() => setShowMenu(true)}
                 style={{
                   border: isScrolled
-                    ? '1px solid green'
+                    ? 'none'
                     : !showMenu && '1px solid white',
+                    backgroundColor: isScrolled? "#134e4a":""
                 }}
               >
                 <p
                   className={`${
-                    isScrolled ? 'text-green-900' : 'text-white'
+                    'text-white'
                   } font-title`}
                 >
                   MENU
                 </p>
                 <FaBars
-                  className={`${isScrolled ? 'text-green-900' : 'text-white'}`}
+                  className='text-white'
                 />
               </div>
             ) : (
               <div
                 className="flex items-center lg:hidden px-4 gap-2 justify-between rounded-sm"
                 onClick={() => setShowMenu(false)}
-                style={{ border: showMenu && '1px solid green' }}
+                style={{ border: showMenu && '1px solid #134e4a' }}
               >
-                <p className="text-green-900 font-title">MENU</p>
-                <IoIosClose color="green" size={30} />
+                <p className="text-teal-900 font-title">MENU</p>
+                <IoIosClose color="#134e4a" size={30} />
               </div>
             )}
           </div>
@@ -152,7 +149,7 @@ function Header() {
           </div>
           <div
             id={styles.layout}
-            className="text-green-900 lg:text-white bg-white lg:bg-transparent h-[53vh] lg:h-auto flex flex-col justify-center items-center flex-1 lg:justify-end lg:flex-row lg:gap-5 lg:px-10 lg:py-3"
+            className="text-teal-900 lg:text-white bg-white lg:bg-transparent h-[53vh] lg:h-auto flex flex-col justify-center items-center flex-1 lg:justify-end lg:flex-row lg:gap-5 lg:px-10 lg:py-3"
           >
             {pathLinks.map((path) => (
               <div

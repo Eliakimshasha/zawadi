@@ -58,11 +58,11 @@ function Contact() {
         id="start"
       >
         <p>Zawadi Agrifood Industries LTD</p>
-        <p className="text-green-800">Contact Us</p>
+        <p className="text-teal-800">Contact Us</p>
       </div>
       <div className="p-4 flex flex-col-reverse gap-3 ">
         <div className="flex flex-col ">
-          <div className="bg-green-100 mt-2 p-3 flex flex-col items-center justify-center gap-3 mb-3">
+          <div className="bg-teal-50 mt-2 p-3 flex flex-col items-center justify-center gap-3 mb-3">
             <h1>
               Have <span className="">a Question?</span>
             </h1>
@@ -79,29 +79,18 @@ function Contact() {
               Email: sales@zawadiagrifood.co.tz
             </span>
           </div>
-          <div className="p-3 flex flex-col items-center justify-center gap-3 mb-3 bg-green-100">
-            <div className="flex flex-col items-center justify-center">
-              <IoHomeOutline size={25} className="text-black" />
-              <h1>BAGAMOYO BRANCH Contact Details</h1>
-            </div>
-            <p className="text-center">
-              zawadi agifood Industries Ltd. Unifilters Godown No 5 | North
-              Airport Road, Nairobi | Tel +254 721 666008 Email:
-              info@zawadiagrifood.co.tz
-            </p>
-          </div>
 
-          <div className="bg-green-100 p-3 flex flex-col items-center justify-center gap-3 mb-3">
+          <div className="bg-teal-50 p-3 flex flex-col items-center justify-center gap-3 mb-3">
             <div className="flex flex-col items-center justify-center">
               <IoHomeOutline size={25} className="text-black" />
               <h1>DAR ES SALAAM Branch Contact Details</h1>
             </div>
             <p className="text-center">
-              Northgate House, Northgate, Sleaford, Lincolnshire, England, NG34
-              7BZ Email: info@zawadiagrifood.co.tz
+              Address. P.O.Box 104342 Holland House- First floor Samora Street,
+              Plot 763-Block 32 Dar es salaam
             </p>
           </div>
-          <div className="p-3 flex flex-col items-center justify-center gap-3 mb-3 bg-green-100">
+          <div className="p-3 flex flex-col items-center justify-center gap-3 mb-3 bg-teal-50">
             <div className="flex flex-col items-center justify-center">
               <GiAlarmClock size={28} className="text-black" />
               <h1>Working Hours</h1>
@@ -114,7 +103,7 @@ function Contact() {
         <div>
           <div>
             <div>
-              <div className="fixed z-[1000] right-0 top-[50%] bg-green-700 p-2 flex flex-col gap-3">
+              <div className="fixed z-[1000] right-0 top-[50%] bg-teal-700 p-2 flex flex-col gap-3">
                 <p className="text-white">
                   <SlSocialFacebook />
                 </p>
@@ -151,23 +140,23 @@ function Contact() {
                 >
                   <div className="flex justify-between items-center">
                     <h1 className="font-bold">
-                      Send Us <span className="text-green-800">A Message</span>
+                      Send Us <span className="text-teal-800">A Message</span>
                     </h1>
-                    <p className='bg-green-100 rounded-full p-2'>
-                      <FaEnvelope className='text-green-500'/>
+                    <p className="bg-teal-50 rounded-full p-2">
+                      <FaEnvelope className="text-teal-900" />
                     </p>
                   </div>
                   <input
                     type="text"
                     name=""
-                    className="bg-green-50 outline-none border-none py-2 px-2 rounded-sm"
+                    className="bg-teal-50 outline-none border-none py-2 px-2 rounded-sm"
                     id={styles.input}
                     placeholder="Your Full Name"
                   />
                   <input
                     type="text"
                     name=""
-                    className="bg-green-50 outline-none border-none py-2 px-2 rounded-sm"
+                    className="bg-teal-50 outline-none border-none py-2 px-2 rounded-sm"
                     id={styles.input}
                     placeholder="Your Email"
                   />
@@ -175,7 +164,7 @@ function Contact() {
                     type="text"
                     name=""
                     id={styles.input}
-                    className="bg-green-50 outline-none border-none py-2 px-2 rounded-sm"
+                    className="bg-teal-50 outline-none border-none py-2 px-2 rounded-sm"
                     placeholder="Subject(Optional)"
                   />
                   <textarea
@@ -183,12 +172,12 @@ function Contact() {
                     id={styles.input}
                     cols="30"
                     rows="10"
-                    className="bg-green-50 outline-none border-none py-2 px-2 rounded-sm"
+                    className="bg-teal-50 outline-none border-none py-2 px-2 rounded-sm"
                     placeholder="Message: Type something..."
                   />
                   <button
                     onClick={(e) => e.preventDefault()}
-                    className="bg-green-700 py-2 my-2 text-white border-none outline-none"
+                    className="bg-teal-700 py-2 my-2 text-white border-none outline-none"
                   >
                     submit
                   </button>

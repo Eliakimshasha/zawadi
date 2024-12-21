@@ -21,8 +21,8 @@ function ServiceCard({ image, title, desc }) {
       <div className="py-4 px-2">
         <div className='flex justify-between items-center'>
           <h1 className="font-bold">{title}</h1>
-          <p className='bg-green-200 p-2 rounded-full'>
-            <IoBookmarks  className='text-green-500'/>
+          <p className='bg-teal-200 p-2 rounded-full'>
+            <IoBookmarks  className='text-teal-900'/>
           </p>
         </div>
         <p className={`${!readMore ? 'line-clamp-4' : 'line-clamp-none'}`}>
@@ -30,26 +30,26 @@ function ServiceCard({ image, title, desc }) {
         </p>
         <div className="flex justify-between items-center">
           <p
-            className="bg-green-200 px-5"
+            className="bg-teal-800 px-5 text-white" 
             onClick={() => setReadMore(!readMore)}
           >
             Read {readMore ? 'Less' : 'More'}
           </p>
           <div className="flex items-center gap-1 py-3">
             <FaXTwitter
-              className="bg-green-200 p-1 hover:bg-green-200"
+              className="bg-teal-800 p-1 hover:bg-teal-800 text-white"
               size={22}
             />
             <SlSocialFacebook
-              className="bg-green-200 p-1 hover:bg-green-200"
+              className="bg-teal-800 p-1 hover:bg-teal-800 text-white"
               size={22}
             />
             <FaInstagram
-              className="bg-green-200 p-1 hover:bg-green-200"
+              className="bg-teal-800 p-1 hover:bg-teal-800 text-white"
               size={22}
             />
             <SlSocialLinkedin
-              className="bg-green-200 p-1 hover:bg-green-200"
+              className="bg-teal-800 p-1 hover:bg-teal-800 text-white"
               size={22}
             />
           </div>

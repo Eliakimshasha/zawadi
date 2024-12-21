@@ -41,7 +41,7 @@ export default function Page() {
         <p className="text-white">Read Our Latest Blogs and Stay Updated</p>
       </div>
       <div className="p-4">
-        <div className="justify-between flex sticky top-24 pt-7 bg-white z-20 px-2 items-center pb-6">
+        <div className="justify-between flex sticky top-16 pt-7 bg-white z-20 px-2 items-center pb-6">
           <p className="bg-green-100 px-2">
             {sort ? 'Sorted By Oldest' : 'Sorted By Latest'}
           </p>
@@ -57,7 +57,7 @@ export default function Page() {
         </div>
         <div className="flex flex-col gap-2">
           {sortedBlogs.map((blog) => (
-            <div key={blog.id}>
+            <div key={blog.id} className=''>
               <Blogs
                 image={blog.image}
                 desc={blog.desc}
