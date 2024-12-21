@@ -5,6 +5,8 @@ import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import { products } from '@/app/components/json/products';
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
+import Quote from '@/app/components/Footer/Quote';
+import Footer from '@/app/components/Footer/Footer';
 
 function Page() {
   return (
@@ -60,6 +62,8 @@ function Page() {
           })}
         </div>
       </div>
+      <Quote/>
+      <Footer/>
     </div>
   );
 }
