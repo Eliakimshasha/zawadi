@@ -37,7 +37,7 @@ function Page() {
         <div className="my-4">
           {products.map((product) => {
             return (
-              <div key={product.id} className="my-4 p-2 rounded-b-sm  shadow-md bg-white">
+              <div key={product.id} className="my-4 p-2 rounded-b-sm  shadow-md bg-white h-fit">
                 <div className="w-[100%] h-[200px] rounded-lg relative overflow-hidden">
                   <Image
                     src={product.image}
