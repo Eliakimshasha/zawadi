@@ -44,14 +44,14 @@ function Footer() {
                   name=""
                   id=""
                   placeholder="E-mail address"
-                  className="w-full px-2 py-1 rounded-sm outline-none border-none text-black"
+                  className="w-full placeholder-teal-800 text-sm text-teal-800 px-2 py-1 rounded-sm outline-none border-none"
                 />
                 <input
                   type="email"
                   name=""
                   id=""
                   placeholder="Full Name (Optional)"
-                  className="w-full my-2 px-2 py-1 rounded-sm outline-none border-none text-black"
+                  className="w-full placeholder-teal-800 text-sm text-teal-800 my-2 px-2 py-1 rounded-sm outline-none border-none"
                 />
                 <button className="bg-yellow-500 rounded-sm text-center py-1 cursor-pointer" onClick={(e)=>e.preventDefault()}>
                   Submit
