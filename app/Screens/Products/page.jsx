@@ -45,7 +45,7 @@ function Page() {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="h-[250px] p-2">
+                <div className="p-2">
                   <h1>{product.title}</h1>
                   <p className='line-clamp-6'>{product.desc}</p>
                 </div>
