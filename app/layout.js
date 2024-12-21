@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         >
           <FaWhatsapp className="text-white" size={50} />
         </div> */}
-        <Header />
+        {/* <Header /> */}
 
         {children}
       </body>

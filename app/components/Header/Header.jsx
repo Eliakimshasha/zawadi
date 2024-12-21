@@ -77,7 +77,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="relative w-[100vw]">
+    <div className="relative w-[100vw] bg-red-600">
       <div
         className={`fixed top-0 lg:pt-5 left-0 w-[100%] z-50 ${
           isScrolled ? 'bg-white lg:py-2 shadow-md' : 'shadow-none'

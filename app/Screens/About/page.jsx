@@ -19,7 +19,7 @@ function page() {
   return (
     <div>
       <div
-        className="h-[60vh] flex justify-center items-center py-10 flex-col"
+        className="h-[60vh] flex relative justify-center items-center py-10 flex-col"
         id={styles.bg}
       >
         <p className="font-bold text-white font-title text-lg uppercase">
@@ -167,11 +167,12 @@ function page() {
             increasing their international revenue by 40% in just one year.
           </p>
         </div>
-        <div className="relative bg-white p-4">
+        <div className="relative bg-white p-4 overflow-hidden">
           <h1 className="absolute z-10 text-xl font-title font-bold text-gray-400 top-[48%] w-full text-center">
             across the world
           </h1>
-          <WorldMap />
+
+            <WorldMap />
         </div>
         <div className="p-4">
           <h1 className="text-lg font-bold font-title">Our Products</h1>
@@ -224,28 +225,31 @@ function page() {
             </div>
           </div>
         </div>
-
-        
       </div>
       <div className="lg:px-24 py-5">
-        <div className='px-4'>
-          <h1 className='font-title font-bold text-xl text-center'>Our partiners</h1>
-          <p className='text-center'>we work with mutiple partiners to ensure we deliver to you the best quality products on-time</p>
+        <div className="px-4">
+          <h1 className="font-title font-bold text-xl text-center">
+            Our partiners
+          </h1>
+          <p className="text-center">
+            we work with mutiple partiners to ensure we deliver to you the best
+            quality products on-time
+          </p>
         </div>
-          <div className="grid lg:grid-cols-3 p-1  rounded-t-sm md:grid-cols-2 lg:gap-6 md:gap-6">
-            <div className="flex flex-col gap-5 bg-white">
-              <div className="w-full  h-[100px] relative overflow-hidden flex justify-center items-center">
-                <Image src={Image1} alt="partiners" className="w-[30%] h-auto" />
-              </div>
-              <div className="w-full  h-[100px] relative overflow-hidden flex justify-center items-center">
-                <Image src={Image2} alt="partiners" className="w-[30%] h-auto" />
-              </div>
-              <div className="w-full  h-[100px] relative overflow-hidden flex justify-center items-center">
-                <Image src={Image3} alt="partiners" className="w-[30%] h-auto" />
-              </div>
+        <div className="grid lg:grid-cols-3 p-1  rounded-t-sm md:grid-cols-2 lg:gap-6 md:gap-6">
+          <div className="flex flex-col gap-5 bg-white">
+            <div className="w-full  h-[100px] relative overflow-hidden flex justify-center items-center">
+              <Image src={Image1} alt="partiners" className="w-[30%] h-auto" />
+            </div>
+            <div className="w-full  h-[100px] relative overflow-hidden flex justify-center items-center">
+              <Image src={Image2} alt="partiners" className="w-[30%] h-auto" />
+            </div>
+            <div className="w-full  h-[100px] relative overflow-hidden flex justify-center items-center">
+              <Image src={Image3} alt="partiners" className="w-[30%] h-auto" />
             </div>
           </div>
         </div>
+      </div>
       <Footer />
     </div>
   );

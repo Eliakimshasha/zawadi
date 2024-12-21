@@ -8,29 +8,29 @@ import { useTheme } from "next-themes";
 export function WorldMap({
   dots = [
     // North America to South America
-    { start: { lat: 34.0522, lng: -118.2437 }, end: { lat: -34.6037, lng: -58.3816 } }, // Los Angeles to Buenos Aires
+    { start: { lat: 34.0522, lng: -118.2437 }, end: { lat: -34.6037, lng: -58.3816 } },
 
     // North America to Europe
-    { start: { lat: 34.0522, lng: -118.2437 }, end: { lat: 48.8566, lng: 2.3522 } }, // Los Angeles to Paris
+    { start: { lat: 34.0522, lng: -118.2437 }, end: { lat: 48.8566, lng: 2.3522 } },
 
     // Europe to Asia
-    { start: { lat: 48.8566, lng: 2.3522 }, end: { lat: 35.6895, lng: 139.6917 } }, // Paris to Tokyo
+    { start: { lat: 48.8566, lng: 2.3522 }, end: { lat: 35.6895, lng: 139.6917 } },
 
     // Asia to Africa
-    { start: { lat: 35.6895, lng: 139.6917 }, end: { lat: -1.286389, lng: 36.817223 } }, // Tokyo to Nairobi
+    { start: { lat: 35.6895, lng: 139.6917 }, end: { lat: -1.286389, lng: 36.817223 } },
 
     // Africa to South America
-    { start: { lat: -1.286389, lng: 36.817223 }, end: { lat: -34.6037, lng: -58.3816 } }, // Nairobi to Buenos Aires
+    { start: { lat: -1.286389, lng: 36.817223 }, end: { lat: -34.6037, lng: -58.3816 } },
 
     // Oceania to North America
-    { start: { lat: -33.8688, lng: 151.2093 }, end: { lat: 34.0522, lng: -118.2437 } }, // Sydney to Los Angeles
+    { start: { lat: -33.8688, lng: 151.2093 }, end: { lat: 34.0522, lng: -118.2437 } },
 
     // Asia to Oceania
-    { start: { lat: 35.6895, lng: 139.6917 }, end: { lat: -33.8688, lng: 151.2093 } }, // Tokyo to Sydney
+    { start: { lat: 35.6895, lng: 139.6917 }, end: { lat: -33.8688, lng: 151.2093 } },
   ],
   lineColor = "#003366", // Default line color
   dotSize = 3, // Custom dot size
-  pathDelay = 0.5, // Custom animation delay for paths
+  pathDelay = 0.9, // Custom animation delay for paths
 }) {
   const svgRef = useRef(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
@@ -57,7 +57,7 @@ export function WorldMap({
   };
 
   return (
-    <div className="w-full aspect-[2/1] bg-white rounded-lg relative font-sans">
+    <div className="w-[96%] mx-auto aspect-[2/1] bg-white rounded-lg relative font-sans">
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
