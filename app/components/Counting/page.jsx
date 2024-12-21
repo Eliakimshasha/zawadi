@@ -93,7 +93,7 @@ function Page() {
                 <h1 className="font-bold text-xl font-title">
                   {countValues[index]}+
                 </h1>
-                <p className="font-paragraph text-sm">{fact.para}</p>
+                <p className="text-sm">{fact.para}</p>
               </div>
             ))}
           </div>

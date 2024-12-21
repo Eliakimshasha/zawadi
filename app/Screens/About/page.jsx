@@ -230,7 +230,7 @@ function page() {
       <div className="lg:px-24 py-5">
         <div className='px-4'>
           <h1 className='font-title font-bold text-xl text-center'>Our partiners</h1>
-          <p className='text-center font-paragraph'>we work with mutiple partiners to ensure we deliver to you the best quality products on-time</p>
+          <p className='text-center'>we work with mutiple partiners to ensure we deliver to you the best quality products on-time</p>
         </div>
           <div className="grid lg:grid-cols-3 p-1  rounded-t-sm md:grid-cols-2 lg:gap-6 md:gap-6">
             <div className="flex flex-col gap-5 bg-white">
