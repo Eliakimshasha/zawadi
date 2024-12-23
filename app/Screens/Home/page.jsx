@@ -66,16 +66,7 @@ export default function Home() {
               compensation, promoting sustainable practices, and utilizing
               technology to streamline processes.
             </p>
-            <div
-              className="flex items-center m-auto w-fit mt-5 px-8 rounded-md"
-              style={{ border: '1px solid #134e4a' }}
-              onClick={() => router.push('About')}
-            >
-              <p className="text-teal-800 font-title">Exprole More</p>
-              <p className="text-teal-800 font-title">
-                <MdOutlineKeyboardDoubleArrowRight size={21} />
-              </p>
-            </div>
+           
           </div>
         </div>
         <div className="px-4 lg:px-24 mb-8 py-3">
